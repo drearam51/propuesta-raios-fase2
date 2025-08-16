@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAIOS FASE II</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #0f172a; /* slate-900 */
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-slate-800">RAIOS</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#vision" class="text-slate-600 hover:text-indigo-600 transition-colors">Visión</a>
+                <a href="#roadmap" class="text-slate-600 hover:text-indigo-600 transition-colors">Roadmap</a>
+                <a href="#costos" class="text-slate-600 hover:text-indigo-600 transition-colors">Inversión</a>
+                <a href="#sugerencias" class="text-slate-600 hover:text-indigo-600 transition-colors">Sugerencias</a>
+            </nav>
+            <a href="#cta" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-indigo-700 transition-transform hover:scale-105">Siguientes Pasos</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="h-screen flex items-center justify-center bg-white">
+            <div class="text-center px-6">
+                <div class="scroll-reveal">
+                    <h2 class="text-5xl md:text-7xl font-black mb-4">
+                        <span class="gradient-text">RAIOS Fase II:</span> La Próxima Evolución
+                    </h2>
+                    <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+                        Una propuesta estratégica para evolucionar RAIOS, entregando valor de forma incremental y asegurando un crecimiento sostenible y medible.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resumen Fase 1 -->
+        <section id="recap" class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="scroll-reveal text-center max-w-3xl mx-auto">
+                    <h3 class="text-4xl font-bold mb-4">Recapitulando el Éxito de la Fase 1</h3>
+                    <p class="text-slate-600 mb-12">Logramos nuestros objetivos iniciales, estableciendo una base sólida y validando nuestra propuesta de valor en el mercado.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="scroll-reveal bg-white p-8 rounded-xl shadow-md text-center">
+                        <div class="text-5xl font-bold text-indigo-600 mb-2">+10,000</div>
+                        <p class="text-slate-700 font-semibold">Usuarios Activos</p>
+                    </div>
+                    <div class="scroll-reveal bg-white p-8 rounded-xl shadow-md text-center" style="transition-delay: 200ms;">
+                        <div class="text-5xl font-bold text-indigo-600 mb-2">4.8/5</div>
+                        <p class="text-slate-700 font-semibold">Calificación de Usuarios</p>
+                    </div>
+                    <div class="scroll-reveal bg-white p-8 rounded-xl shadow-md text-center" style="transition-delay: 400ms;">
+                        <div class="text-5xl font-bold text-indigo-600 mb-2">+20%</div>
+                        <p class="text-slate-700 font-semibold">Crecimiento Mensual</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visión Fase 2 -->
+        <section id="vision" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="scroll-reveal text-center max-w-4xl mx-auto">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <h3 class="text-4xl font-bold mb-4">Nuestra Visión para la Fase 2</h3>
+                    <p class="text-lg text-slate-600">
+                        El objetivo es consolidar nuestra posición como líderes del mercado introduciendo funcionalidades clave, personalización avanzada y una integración perfecta con herramientas de terceros. Queremos transformar nuestra aplicación de una herramienta útil a una plataforma indispensable.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap -->
+        <section id="roadmap" class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="scroll-reveal text-center max-w-3xl mx-auto mb-12">
+                    <h3 class="text-4xl font-bold mb-4">Roadmap Estratégico por Fases</h3>
+                    <p class="text-slate-600">Proponemos un desarrollo en dos etapas para entregar valor de forma rápida y eficiente, adaptado a una dedicación de 14 horas semanales.</p>
+                </div>
+                
+                <!-- Fase 2.1 -->
+                <div class="mb-16">
+                    <h4 class="text-3xl font-bold text-center mb-8 gradient-text">Fase 2.1: Fundación y Conectividad (Próximos 12 meses)</h4>
+                    <div class="relative">
+                        <div class="hidden md:block absolute top-0 bottom-0 left-1/2 w-0.5 bg-indigo-200"></div>
+                        <div class="scroll-reveal mb-8 flex justify-between items-center w-full md:flex-row-reverse">
+                            <div class="w-full md:w-5/12"><div class="bg-white p-6 rounded-xl shadow-lg card-hover transition-all duration-300"><h5 class="font-bold text-xl mb-2 text-indigo-700">Mes 1-5: Seguridad y Acceso Corporativo</h5><p class="text-slate-600">Desarrollo del núcleo de seguridad: Directorio Activo (SSO), roles, perfiles y permisos granulares por módulo. Se incluirá el soporte multilenguaje.</p></div></div>
+                            <div class="hidden md:flex justify-center w-1/12"><div class="w-4 h-4 bg-indigo-600 rounded-full z-10"></div></div><div class="w-full md:w-5/12"></div>
+                        </div>
+                        <div class="scroll-reveal mb-8 flex justify-between items-center w-full">
+                            <div class="w-full md:w-5/12"><div class="bg-white p-6 rounded-xl shadow-lg card-hover transition-all duration-300"><h5 class="font-bold text-xl mb-2 text-indigo-700">Mes 6-9: Ecosistema Conectado con Proveedores</h5><p class="text-slate-600">Creación de la API para la transacción de información y el módulo de carga de datos para proveedores, automatizando la cadena de suministro.</p></div></div>
+                            <div class="hidden md:flex justify-center w-1/12"><div class="w-4 h-4 bg-indigo-600 rounded-full z-10"></div></div><div class="w-full md:w-5/12"></div>
+                        </div>
+                        <div class="scroll-reveal mb-8 flex justify-between items-center w-full md:flex-row-reverse">
+                            <div class="w-full md:w-5/12"><div class="bg-white p-6 rounded-xl shadow-lg card-hover transition-all duration-300"><h5 class="font-bold text-xl mb-2 text-indigo-700">Mes 10-12: Gestión, Control y Lanzamiento del MVP</h5><p class="text-slate-600">Implementación del módulo de administración, almacenamiento de informes, notificaciones básicas, pruebas finales y despliegue de la Fase 2.1.</p></div></div>
+                            <div class="hidden md:flex justify-center w-1/12"><div class="w-4 h-4 bg-indigo-600 rounded-full z-10"></div></div><div class="w-full md:w-5/12"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 2.2 -->
+                <div>
+                    <h4 class="text-3xl font-bold text-center mb-8 text-slate-700">Fase 2.2: Inteligencia y Optimización (Post-lanzamiento)</h4>
+                    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        <div class="scroll-reveal bg-white/70 p-6 rounded-xl border-2 border-dashed border-slate-300">
+                            <h5 class="font-bold text-xl mb-2 text-slate-800">Inteligencia de Negocio con IA</h5>
+                            <p class="text-slate-600">Implementar el agente de IA para analizar y sugerir ajustes en el inventario, optimizando el stock y reduciendo diferencias.</p>
+                        </div>
+                        <div class="scroll-reveal bg-white/70 p-6 rounded-xl border-2 border-dashed border-slate-300" style="transition-delay: 200ms;">
+                            <h5 class="font-bold text-xl mb-2 text-slate-800">Dashboard y Comunicaciones</h5>
+                            <p class="text-slate-600">Desarrollar el dashboard avanzado con indicadores de confiabilidad y averías, y el panel central de comunicaciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Costos y Estimación -->
+        <section id="costos" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="scroll-reveal text-center max-w-3xl mx-auto mb-12">
+                    <h3 class="text-4xl font-bold mb-4">Propuesta de Inversión</h3>
+                    <p class="text-slate-600">Una visión transparente de la inversión para la Fase 2.1 y los costos operativos proyectados.</p>
+                </div>
+                
+                <div class="bg-slate-50 p-8 rounded-xl border border-slate-200 max-w-4xl mx-auto">
+                    <h4 class="text-2xl font-bold mb-6 text-center">Resumen de la Inversión (USD) - Fase 2.1</h4>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead>
+                                <tr class="border-b">
+                                    <th class="pb-2">Concepto</th>
+                                    <th class="pb-2 text-right">Monto</th>
+                                    <th class="pb-2 text-right">Tipo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="py-3">Desarrollo de Software (Fase 2.1)</td>
+                                    <td class="py-3 text-right font-semibold text-indigo-600">$28,000</td>
+                                    <td class="py-3 text-right">Única vez</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="py-3">Infraestructura en la Nube (Azure)</td>
+                                    <td class="py-3 text-right font-semibold">$150 - $300</td>
+                                    <td class="py-3 text-right">Mensual</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3">Consumo de API de IA (Tokens)</td>
+                                    <td class="py-3 text-right font-semibold">N/A</td>
+                                    <td class="py-3 text-right">Fase 2.2</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="font-bold">
+                                    <td class="pt-4">Inversión Total Proyectada (Primer Año)</td>
+                                    <td class="pt-4 text-right text-xl text-indigo-800">$29,800 - $31,600</td>
+                                    <td class="pt-4"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="max-w-4xl mx-auto mt-12 space-y-8">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2">1. Costos de Desarrollo (Inversión Única)</h4>
+                        <p class="text-slate-600">Este costo cubre el desarrollo de la <strong>Fase 2.1</strong> durante un periodo de <strong>12 meses</strong>, con una dedicación de 14 horas semanales de un Desarrollador Senior. Incluye el despliegue de un Producto Mínimo Viable (MVP) robusto y funcional.
+                        <br><em>(Nota: No incluye el costo del Project Manager, que será un recurso interno de la empresa).</em></p>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-2">2. Costos Operativos Mensuales (Recurrentes)</h4>
+                        <p class="text-slate-600">Una vez lanzada la Fase 2.1, la plataforma incurrirá en costos mensuales para su funcionamiento en la nube de Azure.</p>
+                        <ul class="list-disc list-inside mt-4 space-y-2 text-slate-700">
+                            <li><strong>Infraestructura Azure (SaaS):</strong> Cubre el servidor de la aplicación, la base de datos y el almacenamiento de archivos. El costo estimado es para un entorno de producción inicial.</li>
+                            <li><strong>Consumo de API de IA:</strong> El costo por uso del agente de IA se aplicará únicamente cuando se decida iniciar el desarrollo de la Fase 2.2.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sugerencias Adicionales -->
+        <section id="sugerencias" class="py-20 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="scroll-reveal text-center max-w-3xl mx-auto mb-12">
+                    <h3 class="text-4xl font-bold mb-4">Sugerencias Estratégicas</h3>
+                    <p class="text-slate-600">Para maximizar el éxito del proyecto, recomendamos las siguientes aproximaciones:</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="scroll-reveal bg-white p-8 rounded-xl shadow-md">
+                        <h4 class="font-bold text-xl mb-2 text-indigo-700">Enfoque MVP Estratégico</h4>
+                        <p class="text-slate-600">Lanzar la Fase 2.1 como un MVP (Producto Mínimo Viable) nos permite entregar el valor más crítico al negocio en un año, obteniendo retroalimentación temprana y generando un retorno de la inversión más rápido.</p>
+                    </div>
+                    <div class="scroll-reveal bg-white p-8 rounded-xl shadow-md" style="transition-delay: 200ms;">
+                        <h4 class="font-bold text-xl mb-2 text-indigo-700">Gestión Ágil</h4>
+                        <p class="text-slate-600">Trabajar en sprints de 2 semanas con entregas funcionales. Esto permite una retroalimentación constante con el Project Manager, asegurando que el desarrollo esté siempre alineado con los objetivos de negocio.</p>
+                    </div>
+                    <div class="scroll-reveal bg-white p-8 rounded-xl shadow-md" style="transition-delay: 400ms;">
+                        <h4 class="font-bold text-xl mb-2 text-indigo-700">Monitoreo de Costos</h4>
+                        <p class="text-slate-600">Configurar desde el día uno alertas de presupuesto en Azure. Esto nos permitirá monitorear activamente los costos operativos y tomar decisiones informadas para optimizar el uso de recursos sin sorpresas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="py-20 bg-indigo-700 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <div class="scroll-reveal">
+                    <h3 class="text-4xl font-bold mb-4">¿Listos para Empezar?</h3>
+                    <p class="text-indigo-200 max-w-2xl mx-auto mb-8">Esta propuesta está diseñada para ofrecer el máximo valor y transparencia. Estamos listos para comenzar y llevar RAIOS al siguiente nivel.</p>
+                    <button class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full text-lg hover:bg-indigo-100 transition-transform hover:scale-105">Aprobar Fase 2.1</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 RAIOS. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para animaciones de scroll
+        const scrollElements = document.querySelectorAll('.scroll-reveal');
+        const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend);
+        };
+        const displayScrollElement = (element) => { element.classList.add('visible'); };
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) { displayScrollElement(el); }
+            });
+        }
+        window.addEventListener('scroll', handleScrollAnimation);
+        handleScrollAnimation();
+    </script>
+</body>
+</html>
